@@ -109,7 +109,7 @@ const getCountryInfo = async country => {
 		`*/
 		details.innerHTML = `
 			<div class="details__header">
-				<a href="/" class="">Back</a>
+				<a href="index.html" class="">Back</a>
 			</div>
 			<img id="details-img" src="${countryInfo[0].flags.svg}" />
 			<div class="details__info">
