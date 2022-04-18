@@ -1,0 +1,15 @@
+body{
+	margin: 0;
+	padding: 0 16px;
+	font-size: 10px;
+}
+
+img{
+	max-width: 100%;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	/*padding: 31px 16px 30px;*/
+}

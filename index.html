@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Api Countries</title>
+
+	<!-- Fuentes -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/styles-dist.css">
+</head>
+<body>
+	<header>
+		<nav class="nav">
+			<h1>Where in the world</h1>
+			<!-- <button>Dark mode</button> -->
+			<div class="switch-container">
+				<span class="sun-icon"></span>
+				<input type="checkbox" id="switch-input" class="checkbox">
+				<label for="switch-input" id="switch" class="switch"></label>
+				<span class="moon-icon"></span>
+			</div>
+		</nav>
+		<!-- Semanticamente aqui van los inputs de busqueda -->
+		<form action="" id="form" class="form">
+			<!-- <i>Icono</i> -->
+			<input type="search" id="search" class="form__input" name="search" placeholder="Search for a country">
+			<select name="region" id="region" class="form__select">
+				<option class="form__option" value="default">Filter by Region</option>
+				<option class="form__option" value="africa">Africa</option>
+				<option class="form__option" value="americas">America</option>
+				<option class="form__option" value="asia">Asia</option>
+				<option class="form__option" value="europe">Europe</option>
+				<option class="form__option" value="oceania">Oceania</option>
+			</select>
+		</form>
+	</header>
+	
+	<!-- Aqui pintamos todo lo que llegue de la API -->
+	<main>
+		<article id="countries" class="countries">
+		</article>
+	</main>
+
+	<script src="js/api.js"></script>
+	<script src="js/change-theme.js"></script>
+	<!-- <script src="js/testPaisesAleatorios.js"></script> -->
+</body>
+</html>
